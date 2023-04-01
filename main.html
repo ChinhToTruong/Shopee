@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopee</title>
+
+    <link
+      rel="shortcut icon"
+      href="./static/img/logo-title-shopee.webp"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/css/main.css" />
+  </head>
+  <body class="relative">
+    <div class="container w-full h-full bg-gray-300">
+      <!-- navbar -->
+      <div class="navbar w-full h-1/4 bg-main flex items-center flex-col">
+        <div class="navbar_logo py-2">
+          <span>
+            <img
+              class="w-20"
+              src="./static/img/logo-title-shopee.webp"
+              alt=""
+            />
+          </span>
+        </div>
+        <div class="flex w-full h-1/6 items-center justify-between relative">
+          <div
+            class="navbar_search relative w-full h-full mx-2 bg-white flex items-center round"
+          >
+            <span class="px-1 border-r-2 cursor-pointer"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              type="text"
+              placeholder="Tìm kiếm..."
+              class="h-full w-full focus:outline-none"
+            />
+            <span class="px-1 border-l-2 cursor-pointer"
+              ><i class="fa-solid fa-camera"></i
+            ></span>
+          </div>
+          <div class="navbar_icons w-20 mx-1 flex h-full justify-between">
+            <div
+              class="h-full w-full mx-1 text-white flex items-center cursor-pointer relative"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="absolute -top-1 -right-1">
+                <h3 class="text-red-700">4+</h3>
+              </span>
+            </div>
+            <div
+              class="h-full w-full mx-1 text-white flex items-center cursor-pointer relative"
+            >
+              <i class="fa-solid fa-comments-dollar"></i>
+              <span class="absolute -top-1 -right-1">
+                <h3 class="text-red-700">4+</h3>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex text-center mx-4">
+          <h1 class="text-white font-medium text-xl mx-8 my-4 w-full">
+            Gì cũng có với shopee hay!
+          </h1>
+        </div>
+      </div>
+
+      <!-- contain -->
+      <div
+        class="container w-full mb-14 relative flex flex-col justify-center items-center bg-gray-200"
+      >
+        <!-- Qr site -->
+        <div
+          class="md:hidden flex bg-white w-10/12 h-16 border-2 justify-between absolute -top-5 left-8"
+        >
+          <div class="flex items-center border-r-2">
+            <span class="px-4">
+              <i class="fa-solid fa-qrcode fa-xl"></i>
+            </span>
+          </div>
+          <div class="border-r-2 px-2 flex flex-col justify-center">
+            <span class="flex items-center">
+              <i class="fa-brands fa-paypal pr-2 text-blue-600"></i>
+              <h3>Ví AirPay</h3>
+            </span>
+            <h6 class="text-xs text-red-600">Đăng nhập xem thông tin</h6>
+          </div>
+          <div class="px-2 flex flex-col justify-center">
+            <span class="flex items-center">
+              <i class="fa-brands fa-bitcoin pr-2 text-yellow-400"></i>
+              <h3>Shopee Xu</h3>
+            </span>
+            <h6 class="text-xs text-red-600">Đăng nhập xem thông tin</h6>
+          </div>
+        </div>
+
+        <!-- options site -->
+        <div
+          class="md:hidden pt-16 w-full h-52 bg-white grid grid-rows-2 grid-flow-col items-end pb-6 px-8 overflow-auto snap-x snap-mandatory"
+        >
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i class="p-6 fa-solid fa-cloud-bolt fa-2xl text-red-500"></i>
+            </a>
+          </div>
+
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i class="p-6 fa-solid fa-truck-fast fa-2xl text-blue-500"></i>
+            </a>
+          </div>
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i
+                class="p-6 fa-solid fa-ticket-simple fa-2xl text-yellow-500"
+              ></i>
+            </a>
+          </div>
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i
+                class="p-6 fa-solid fa-cubes-stacked fa-2xl text-green-500"
+              ></i>
+            </a>
+          </div>
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i class="p-6 fa-solid fa-bowl-food fa-2xl text-red-500"></i>
+            </a>
+          </div>
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i
+                class="p-6 fa-solid fa-money-bill-wheat fa-2xl text-blue-500"
+              ></i>
+            </a>
+          </div>
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i class="p-6 fa-solid fa-shirt fa-2xl text-green-500"></i>
+            </a>
+          </div>
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i class="p-6 fa-solid fa-glasses fa-2xl text-gray-500"></i>
+            </a>
+          </div>
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i class="p-6 fa-brands fa-adversal fa-2xl text-red-500"></i>
+            </a>
+          </div>
+          <div class="mr-6 border-2 snap-start hover:bg-gray-200">
+            <a href="http://" class="h-full w-full">
+              <i class="p-6 fa-solid fa-capsules fa-2xl text-green-500"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- voucher site -->
+        <div class="w-full mt-2 mx-2 flex flex-col justify-around md:hidden">
+          <div class="bg-green-700 flex items-center justify-around m-2">
+            <span class="h-20 w-20 m-2 flex items-center bg-white">
+              <i
+                class="fa-solid fa-arrow-down-wide-short fa-2xl text-red-700"
+              ></i>
+            </span>
+            <span>
+              <h1 class="text-yellow-600">Phiếu giảm giá 50%</h1>
+              <h3 class="text-xs">Áp dụng với mặt hàng ....</h3>
+            </span>
+            <span>
+              <button
+                class="bg-red-600 p-1 hover:bg-gray-200 hover:text-red-400"
+              >
+                Lấy voucher
+              </button>
+            </span>
+          </div>
+          <div class="flex items-center justify-around bg-green-700 m-2">
+            <span class="h-20 w-20 m-2 flex items-center bg-white">
+              <i
+                class="fa-solid fa-arrow-down-wide-short fa-2xl text-red-700"
+              ></i>
+            </span>
+            <span>
+              <h1 class="text-yellow-600">Phiếu giảm giá 50%</h1>
+              <h3 class="text-xs">Áp dụng với mặt hàng ....</h3>
+            </span>
+            <span>
+              <button
+                class="bg-red-600 p-1 hover:bg-gray-200 hover:text-red-400"
+              >
+                Lấy voucher
+              </button>
+            </span>
+          </div>
+          <div class="flex items-center justify-around bg-green-700 m-2">
+            <span class="h-20 w-20 m-2 flex items-center bg-white">
+              <i
+                class="fa-solid fa-arrow-down-wide-short fa-2xl text-red-700"
+              ></i>
+            </span>
+            <span>
+              <h1 class="text-yellow-600">Phiếu giảm giá 50%</h1>
+              <h3 class="text-xs">Áp dụng với mặt hàng ....</h3>
+            </span>
+            <span>
+              <button
+                class="bg-red-600 p-1 hover:bg-gray-200 hover:text-red-400"
+              >
+                Lấy voucher
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <!-- navbar container -->
+
+        <div class="container w-full h-14 bg-white hidden sm:block">
+          <ul class="flex">
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Máy tính</a>
+            </li>
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Điện thoại</a>
+            </li>
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Quần áo</a>
+            </li>
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Đồng hồ</a>
+            </li>
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Giày</a>
+            </li>
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Xe</a>
+            </li>
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Nhà</a>
+            </li>
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Đồ gia dụng</a>
+            </li>
+            <li class="border-2 w-full h-10 m-2 text-center hover:bg-gray-200">
+              <a href="http://">Khác</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- items site -->
+        <div
+          class="md:grid md:grid-cols-3 md:gap-4 xl:grid xl:grid-cols-5 xl:gap-6 md:mx-6 md:mx-4"
+        >
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer mx-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+
+          <div
+            class="w-full flex h-32 bg-white hover:bg-gray-300 hover:cursor-pointer m-2 md:h-80 md:w-52 md:m-4 md:flex-col md:items-center"
+          >
+            <div>
+              <img class="h-32 w-32" src="./static/img/product.jpeg" alt="" />
+            </div>
+            <div class="info p-4">
+              <h1 class="title text-3xl pb-2">TITLE</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <button
+              class="hidden md:block bg-red-700 w-full h-10 text-white hover:bg-blue-500"
+            >
+              <span>
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </span>
+              <span> Mua </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <div class="footer w-full fixed bottom-0 h-14 md:hidden bg-white">
+        <ul class="flex justify-around h-full">
+          <li class="w-full flex justify-center items-end hover:bg-gray-300">
+            <a href="./hot.html" class="flex flex-col items-center">
+              <i class="fa-brands fa-hotjar fa-2xl"></i>
+              <h4 class="text-sm pt-4">Hot</h4>
+            </a>
+          </li>
+
+          <li class="w-full flex justify-center items-end hover:bg-gray-300">
+            <a href="./feedback.html" class="flex flex-col items-center">
+              <i class="fa-solid fa-layer-group fa-2xl"></i>
+              <h4 class="text-sm pt-4">Feedbacks</h4>
+            </a>
+          </li>
+
+          <li class="w-full flex justify-center items-end hover:bg-gray-300">
+            <a href="noti.html" class="flex flex-col items-center">
+              <i class="fa-solid fa-bell fa-2xl"></i>
+              <h4 class="text-sm pt-4">Thông báo</h4>
+            </a>
+          </li>
+
+          <li class="w-full flex justify-center items-end hover:bg-gray-300">
+            <a href="me.html" class="flex flex-col items-center">
+              <i class="fa-solid fa-user fa-2xl"></i>
+              <h4 class="text-sm pt-4">Tôi</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- icons fixed options -->
+      <div class="fixed bottom-16 right-10 flex flex-col hidden md:block">
+          <span class="chat-icon w-20 h-20 bg-blue-500 justify-center flex items-center rounded-full text-white m-2 hover:bg-gray-200  hover:text-red-500">
+            <i class="fa-solid fa-headphones fa-shake fa-2xl"></i>
+          </span>
+          <span class="hidden to-top w-20 h-20 bg-blue-500 justify-center flex items-center rounded-full text-white m-2 hover:bg-gray-200  hover:text-red-500" onclick= upTop()>
+            <i class="fa-solid fa-caret-up fa-bounce fa-2xl"></i>
+          </span>
+      </div>
+
+      <!-- chat box -->
+      <div class="fixed w-64 h-72 bottom-0 bg-white mb-2 right-4 hidden" id="chat-box">
+        <nav class="m-2 flex justify-between border-b-2">
+          <span>
+            <img class="w-10 h-10 rounded-full" src="./static/img/feb5b0bcd5290f775638.jpg" alt="">
+          </span>
+          <span>
+            <h1>
+              Admin
+            </h1>
+            <p>
+              <i class="fa-solid fa-earth-americas" style="color: #2ec27e;"></i>
+              online
+            </p>
+          </span>
+          <span class="hover:text-red-500 w-5 close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </nav>
+
+        <div class=" fixed bottom-0 mb-2 border-t-2">
+          <input type="text" class="w-10/12">
+          <i class="fa-solid fa-paper-plane hover:text-blue-500 hover:cursor-pointer"></i>
+        </div>
+      </div>
+
+    </div>
+    <!--  js  -->
+    <script
+      src="https://kit.fontawesome.com/fedb1cf925.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./static/js/main.js"></script>
+  </body>
+</html>

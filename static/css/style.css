@@ -1,0 +1,19 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-main{
+    background-color: RGB(232, 89, 12);
+}
+
+.main{
+    color: RGB(232, 89, 12);
+}
+
+html, body{
+    height: 100vh;
+}

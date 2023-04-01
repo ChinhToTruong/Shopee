@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopee</title>
+    <link
+      rel="shortcut icon"
+      href="./static/img/logo-title-shopee.webp"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <div class="container h-full w-full bg-white">
+      <!-- mobile form -->
+      <div class="form-container h-full w-full flex flex-col">
+        <div
+          class="form_navbar h-12 border-b-2 flex items-center justify-center font-medium text-xl py-3.5 md:hidden"
+        >
+          <h1>Đăng Nhập</h1>
+        </div>
+        
+        <div class="w-full h-full">
+            <div class="form_content w-full h-full pt-24 px-6 md:flex md:items-center md:justify-around">
+                <div class="form_content--title flex justify-center pb-8 md:w-1/2">
+                  <span>
+                    <img class="hidden md:block md:w-90 md:px-24" src="./static/img/Shopee.svg" alt="">
+                    <img
+                      class="w-36 md:hidden"
+                      src="./static/img/logo-title-shopee.webp"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="w-full md:w-1/2 md:border-2 pd:m-10 md:drop-shadow-2xl">
+                  <div class="hidden md:block text-center md:pt-10">
+                    <h1 class="font-medium text-3xl pb-10 main">Đăng Nhập</h1>
+                  </div>
+                  <div class="form_content--item py-2 md:px-10 md:py-6">
+                    <input
+                      type="text"
+                      class="form-input w-full h-10 border-2"
+                      id="number"
+                      placeholder="Nhập số điện thoại..."
+                    />
+                  </div>
+                  <div class="form_content--item py-2 md:px-10 md:py-6" id="password">
+                    <input
+                      type="password"
+                      class="form-input w-full h-10 border-2"
+                      placeholder="Mật khẩu"
+                    />
+                  </div>
+                  <div class="form_content--item py-2 md:px-10 md:py-6 hidden" id="re-password">
+                    <input
+                      type="password"
+                      class="form-input w-full h-10 border-2"
+                      placeholder="Nhập lại mật khẩu..."
+                    />
+                  </div>
+                  <div class="btn pt-2 md:pt-10 md:px-10">
+                    <button class="w-full bg-main h-10 text-white hover:bg-gray-400 hover:text-red-600">
+                      <a href="main.html">Đăng nhập</a>
+                    </button>
+                  </div>
+                  <div class="form_content--links flex justify-between mt-2 text-blue-600 md:px-10">
+                    <span class="hover:underline">
+                      <a href="http://">Đăng ký</a>
+                    </span>
+        
+                    <span class="hover:underline">
+                      <a href="http://">Đăng nhập bằng SMS</a>
+                    </span>
+                  </div>
+                  <div class="form_footer px-6 mt-10 md:mb-6 md:mt-6 md:flex">
+                    <button class="w-full md:w-1/2 md:mx-3 md:flex">
+                      <div class="form_footer--link w-full py-2 my-2 bg-blue-600 hover:bg-blue-500 md:flex md:px-2 md:items-center">
+                          <i class="fa-brands fa-google"></i>
+                          <a href="http://" class="text-white ml-2">Đăng nhập với Google</a>
+                      </div>
+                    </button>
+                    <button class="w-full md:w-1/2 mx-3">
+                      <div class="form_footer--link w-full py-2 my-2 bg-blue-600 hover:bg-blue-500 md:flex md:px-2 md:items-center">
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <a href="http://" class="text-white ml-2">Đăng nhập với Facebook</a>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+        </div>
+
+      <nav class="container"></nav>
+    </div>
+
+    <!-- script -->
+
+    <script
+      src="https://kit.fontawesome.com/fedb1cf925.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./static/js/index.js"></script>
+  </body>
+</html>
